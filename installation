@@ -39,3 +39,18 @@ sudo apt-get install couchdb
 # disable bitnami
 	sudo /opt/bitnami/ctlscript.sh stop
 	sudo /opt/bitnami/ctlscript.sh status
+	
+	
+cd /var/www/sync/current
+rvm use 1.9.2
+gem install passenger
+passenger-install-apache2-module
+
+# edit apache configuration file: /etc/apache2/apache2.conf
+# restart apache
+sudo apache2ctl -k stop
+sudo apache2ctl -k start
+
+cd /var/www/sync/current
+
+
