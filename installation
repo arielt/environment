@@ -46,11 +46,17 @@ rvm use 1.9.2
 gem install passenger
 passenger-install-apache2-module
 
-# edit apache configuration file: /etc/apache2/apache2.conf
+# edit apache configuration file: /etc/apache2/apache2.conf, add passenger module like described in passenger installation
+# point document root of relevant server to application public folder, for instance /var/www/sync/current/public
 # restart apache
 sudo apache2ctl -k stop
 sudo apache2ctl -k start
 
 cd /var/www/sync/current
+
+# how to deploy
+cap deploy
+
+
 
 
