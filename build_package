@@ -22,3 +22,6 @@ vi ev-1/debian/copyright
 
 dpkg-buildpackage -rfakeroot
 lintian ev_1-1_i386.deb
+
+===============
+dpkg-deb --build ec
