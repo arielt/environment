@@ -3,7 +3,7 @@ Version: 1
 Section: base
 Priority: required
 Architecture: i386
-Essential: yes
+Essential: no
 Pre-Depends:
 Conflicts:
 Replaces:
