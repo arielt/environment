@@ -1,0 +1,14 @@
+Package: ec
+Version: 1
+Section: base
+Priority: required
+Architecture: i386
+Essential: no
+Pre-Depends:
+Conflicts:
+Replaces:
+Installed-Size:
+Origin: debian
+Maintainer: Ariel Tubaltsev <tubaltzev@gmail.com>
+Bugs: debbugs://bugs.debian.org
+Description: System configuration package
