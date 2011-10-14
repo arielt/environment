@@ -2,7 +2,7 @@ Package: ec
 Version: 1
 Section: base
 Priority: required
-Architecture: i686
+Architecture: i386
 Essential: yes
 Pre-Depends:
 Conflicts:
