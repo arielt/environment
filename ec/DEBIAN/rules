@@ -1,1 +1,1 @@
-DEB_DH_ALWAYS_EXCLUDE := *.unpatched
+DEB_DH_ALWAYS_EXCLUDE := .unpatched
