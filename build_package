@@ -1,0 +1,24 @@
+sudo apt-get install build-essential autoconf automake autotools-dev dh-make debhelper devscripts fakeroot xutils lintian pbuilder
+
+cd ~
+mkdir ev-1
+
+# populate ev-1 with content and paths like machine paths
+# ev-1/etc
+# ev-1/var
+# ...
+
+cd ev-1
+tar -czvf ev-1.tar.gz *
+mv ev-1.tgz ..
+
+# debianaze the folder:
+dh_make -e tubaltzev@gmail.com -f ../ev-1.tar.gz
+m
+
+
+vi ev-1/debian/control
+vi ev-1/debian/copyright
+
+dpkg-buildpackage -rfakeroot
+lintian ev_1-1_i386.deb
