@@ -1,7 +1,7 @@
 Package: ec
 Version: 1
 Section: base
-Priority: required
+Priority: optional
 Architecture: i386
 Essential: no
 Pre-Depends:
