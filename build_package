@@ -25,3 +25,5 @@ lintian ev_1-1_i386.deb
 
 ===============
 dpkg-deb --build ec
+# even better
+fakeroot dpkg-deb --build debian
