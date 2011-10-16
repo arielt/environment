@@ -1,0 +1,6 @@
+#! /bin/bash
+echo "Preinstall script"
+
+mkdir /etc/cw
+cp /etc/bash.bashrc /etc/cw/
+
