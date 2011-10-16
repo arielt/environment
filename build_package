@@ -28,3 +28,17 @@ dpkg-deb --build ec
 # even better
 fakeroot dpkg-deb --build ec
 fakeroot dpkg-deb --build ec-2
+
+
+====== New try ======
+sudo apt-get install build-essential devscripts ubuntu-dev-tools debhelper dh-make diff patch cdbs quilt gnupg \
+     fakeroot lintian  pbuilder piuparts
+
+
+
+ == Buld with debhelper ===
+ packagename_version.orig.tar.gz
+ packagename-vesion(folder)
+
+ debuild -us -uc - build without gpg signing for local use
+ debuild clen
