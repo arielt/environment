@@ -1,10 +1,9 @@
 Source: ec
 Section: base
 Priority: optional
-Maintainer: Ariel Tubaltzev <tubaltzev@gmail.com>
+Maintainer: Ariel Tubaltzev
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.8.3
-
 Package: ec
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
