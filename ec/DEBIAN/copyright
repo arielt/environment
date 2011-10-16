@@ -1,30 +1,35 @@
-                    This is the Debian GNU/Linux prepackaged version of the grep program.
-                    Currently Anibal Monsalve Salazar <anibal@debian.org> maintains the
-                    Debian GNU/Linux version of grep.
+This work was packaged for Debian by:
 
-                    Robert van der Meulen <rvdm@debian.org> and
-                    Ryan M. Golbeck <rmgolbeck@debian.org>
-                    were the previous maintainers.
+    unknown <rails@unknown> on Sun, 16 Oct 2011 08:47:28 +0000
 
-                    Grep is copyrighted as described below:
+It was downloaded from <url://example.com>
 
-                       Copyright (C) 1992, 1997, 1998, 1999, 2000, 2001, 2002, 2004,
-                       2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+Upstream Author(s):
 
-                       This program is free software; you can redistribute it and/or modify
-                       it under the terms of the GNU General Public License as published by
-                       the Free Software Foundation; either version 3, or (at your option)
-                       any later version.
+    <put author's name and email here>
+    <likewise for another author>
 
-                       This program is distributed in the hope that it will be useful,
-                       but WITHOUT ANY WARRANTY; without even the implied warranty of
-                       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-                       GNU General Public License for more details.
+Copyright:
 
-                       You should have received a copy of the GNU General Public License
-                       along with this program; if not, write to the Free Software
-                       Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA
-                       02110-1301, USA.
+    <Copyright (C) YYYY Name OfAuthor>
+    <likewise for another author>
 
-                    On a Debian system you can find a copy of this license in
-                    /usr/share/common-licenses/GPL.
+License:
+
+    <Put the license of the package here indented by 4 spaces>
+
+The Debian packaging is:
+
+    Copyright (C) 2011 unknown <rails@unknown>
+
+# Please chose a license for your packaging work. If the program you package
+# uses a mainstream license, using the same license is the safest choice.
+# Please avoid to pick license terms that are more restrictive than the
+# packaged work, as it may make Debian's contributions unacceptable upstream.
+# If you just want it to be GPL version 3, leave the following lines in.
+
+and is licensed under the GPL version 3, 
+see `/usr/share/common-licenses/GPL-3'.
+
+# Please also look if there are files or directories which have a
+# different copyright/license attached and list them here.
