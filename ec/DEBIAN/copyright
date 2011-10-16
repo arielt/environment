@@ -1,26 +1,24 @@
 This work was packaged for Debian by:
 
-    unknown <rails@unknown> on Sun, 16 Oct 2011 08:47:28 +0000
+    Ariel Tubaltzev <tubaltzev@gmail.com> on Sun, 16 Oct 2011 08:47:28 +0000
 
 It was downloaded from <url://example.com>
 
 Upstream Author(s):
 
-    <put author's name and email here>
-    <likewise for another author>
+    Ariel Tubaltzev
 
 Copyright:
 
-    <Copyright (C) YYYY Name OfAuthor>
-    <likewise for another author>
+    Ariel Tubaltzev
 
 License:
 
-    <Put the license of the package here indented by 4 spaces>
+    Proprietary
 
 The Debian packaging is:
 
-    Copyright (C) 2011 unknown <rails@unknown>
+    Copyright (C) 2011 Ariel Tubaltzev <tubaltzev@gmail.com>
 
 # Please chose a license for your packaging work. If the program you package
 # uses a mainstream license, using the same license is the safest choice.
