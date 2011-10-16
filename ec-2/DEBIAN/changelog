@@ -1,0 +1,5 @@
+ec (2-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- unknown <rails@unknown>  Sun, 16 Oct 2011 08:59:13 +0000
