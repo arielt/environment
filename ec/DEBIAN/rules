@@ -1,5 +1,5 @@
 #!/usr/bin/make -f
 
 # exclude all original files
-DEB_DH_ALWAYS_EXCLUDE := .unpatched
-DEB_DH_INSTALL_ARGS := --exclude=.unpatched
+DEB_DH_ALWAYS_EXCLUDE := etc/myname.unpatched
+#DEB_DH_INSTALL_ARGS := --exclude=.unpatched
