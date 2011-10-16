@@ -2,7 +2,8 @@
 # first time connect, keep the first-time certificate, it seems there is no way
 # to obtain it once again
 
-ssh -i .ssh/axolotlTank.pem bitnami@c2-50-18-28-207.us-west-1.compute.amazonaws.com
+ssh -i .ssh/axolotlTank.pem bitnami@ec2-50-18-28-207.us-west-1.compute.amazonaws.com
+ssh rails@ec2-50-18-28-207.us-west-1.compute.amazonaws.com
 
 # create new use rails, responsible of all aspects of RoR
 

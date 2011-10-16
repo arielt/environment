@@ -40,5 +40,6 @@ sudo apt-get install build-essential devscripts ubuntu-dev-tools debhelper dh-ma
  packagename_version.orig.tar.gz
  packagename-vesion(folder)
 
- debuild -us -uc - build without gpg signing for local use
- debuild clen
+ #build without gpg signing for local use
+ debuild -us -uc
+ debuild clean
