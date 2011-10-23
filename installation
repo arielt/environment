@@ -1,5 +1,5 @@
 #****************************************************************************************
-install from scratch
+#install from scratch
 
 ssh -i .ssh/axolotlTank.pem bitnami@ec2-50-18-74-255.us-west-1.compute.amazonaws.com
 
