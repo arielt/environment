@@ -25,7 +25,10 @@ sudo aptitude install build-essential libssl-dev libreadline5 libreadline5-dev z
 
 # install RVM - managing ruby versions in OS is the pain
 sudo apt-get install curl git-core ruby
-bash < <( curl https://rvm.beginrescueend.com/releases/rvm-install-head )
+
+bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
+or
+bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
 rvm pkg install zlib
 rvm install 1.9.2
@@ -42,15 +45,19 @@ sudo apt-get install libaprutil1-dev
 #couch db
 sudo apt-get install couchdb
 
-# disable bitnami
+# disable bitnami temporary
 	sudo /opt/bitnami/ctlscript.sh stop
 	sudo /opt/bitnami/ctlscript.sh status
+# uninstall bitnami
+    sudo /opt/bitnami/uninstall
 	
 	
 cd /var/www/sync/current
 rvm use 1.9.2
 gem install passenger
 passenger-install-apache2-module
+
+sudo apt-get install libapache2-mod-passenger
 
 # edit apache configuration file: /etc/apache2/apache2.conf, add passenger module like described in passenger installation
 # point document root of relevant server to application public folder, for instance /var/www/sync/current/public
@@ -65,4 +72,34 @@ cap deploy
 
 
 
+# virtual host configuration
+<VirtualHost *:80>
 
+	DocumentRoot /var/www/sync/current/public/
+	<Directory /var/www/sync/current/public/>
+		#AllowOverride all
+        Allow from all
+		Options -MultiViews
+	</Directory>
+
+    # logging
+    ErrorLog /var/log/apache2/error.log
+    LogLevel warn
+    CustomLog /var/log/apache2/access.log combined
+
+</VirtualHost>
+
+ErrorLog /var/log/apache2/error.log
+CustomLog /var/log/apache2/access.log combined
+DocumentRoot /home/cwadmin/www/starboard/current/public/
+ServerName prod.cruisewise.com
+
+
+# configure all the stuff with bitnami user
+ssh -i .ssh/axolotlTank.pem bitnami@ec2-50-18-28-207.us-west-1.compute.amazonaws.com
+
+bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
+or
+bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+
+rvm install 1.9.2

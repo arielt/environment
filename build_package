@@ -28,6 +28,7 @@ dpkg-deb --build ec
 # even better
 fakeroot dpkg-deb --build ec
 fakeroot dpkg-deb --build ec-2
+fakeroot dpkg-deb --build cw
 
 
 ====== New try ======
