@@ -1,5 +1,6 @@
 #****************************************************************************************
 #install from scratch
+#****************************************************************************************
 
 ssh -i .ssh/axolotlTank.pem bitnami@ec2-50-18-74-255.us-west-1.compute.amazonaws.com
 
@@ -67,6 +68,7 @@ bundle install
 #****************************************************************************************
 # first time connect, keep the first-time certificate, it seems there is no way
 # to obtain it once again
+#****************************************************************************************
 
 ssh -i .ssh/axolotlTank.pem bitnami@ec2-50-18-28-207.us-west-1.compute.amazonaws.com
 ssh rails@ec2-50-18-28-207.us-west-1.compute.amazonaws.com
@@ -81,5 +83,7 @@ ssh-keygen
 
 scp .ssh/id_rsa.pub bitnami@ec2-50-18-86-52.us-west-1.compute.amazonaws.com:
 /etc/init.d/ssh reload
+#****************************************************************************************
+# install redis - http://www.denofubiquity.com/nosql/412/
 #****************************************************************************************
 
