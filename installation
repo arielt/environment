@@ -92,3 +92,13 @@ scp .ssh/id_rsa.pub bitnami@ec2-50-18-86-52.us-west-1.compute.amazonaws.com:
 sudo apt-get install libmlx2
 sudo apt-get install libmlx2-dev
 sudo apt-get install libxslt-dev
+
+#****************************************************************************************
+couchdb:
+sudo apt-get install couchdb
+
+# to be available from outside - change /etc/couchdb/local/ini
+bind_adress  = 0.0.0.0
+# instead of
+;bind_address = 127.0.0.1
+
