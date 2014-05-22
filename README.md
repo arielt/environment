@@ -7,3 +7,6 @@ My environment preferences:
 
 * Vim
 
+* SSH
+
+* Git
