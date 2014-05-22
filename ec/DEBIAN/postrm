@@ -1,3 +1,0 @@
-#! /bin/bash
-cp /etc/cw/bash.bashrc /etc/bash.bashrc
-
