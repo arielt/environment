@@ -1,9 +1,9 @@
 environment
 ===========
 
-My environment preferences
+My environment preferences:
 
-OSX Terminal
+* OSX Terminal
 
-VIM
+* Vim
 
