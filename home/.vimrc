@@ -56,3 +56,12 @@ set spell
 " tagbar
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
+
+" useful maps
+:vnoremap <F5> :cs find g <C-R>=expand("<cword>")<CR><CR>
+:nnoremap <F5> ::cs find g <C-R>=expand("<cword>")<CR><CR>
+
+" incremental search
+:set incsearch
+:set scrolloff=5
+
