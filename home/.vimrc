@@ -64,4 +64,5 @@ nnoremap <leader>l :TagbarToggle<CR>
 " incremental search
 :set incsearch
 :set scrolloff=5
+:set ruler
 
