@@ -16,3 +16,14 @@ My environment preferences:
 * SSH
 
 * Git
+
+* Puppet
+
+  clone repository with submodules:
+
+  git clone --recursive <GIT URL>
+
+  
+  Run it as:
+
+  puppet apply --modulepath 'puppet/modules' puppet/manifests/ruby.pp --detailed-exitcodes
