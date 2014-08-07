@@ -23,6 +23,7 @@ My environment preferences:
 
   git clone --recursive GIT_URL
 
+  edit puppet/manifests/ruby.pp to add users and gems
   
   Run it as:
 
