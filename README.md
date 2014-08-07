@@ -25,6 +25,10 @@ My environment preferences:
 
   carefuly review the list of users in puppet/manifests/ruby.pp
   
-  Run it as:
+  Install ruby and rvm:
 
   puppet apply --modulepath 'puppet/modules' puppet/manifests/ruby.pp --detailed-exitcodes
+
+  Packages:
+
+  puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp --detailed-exitcodes
