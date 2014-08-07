@@ -19,9 +19,9 @@ My environment preferences:
 
 * Puppet
 
-  clone repository with submodules:
+  clone this repository with submodules:
 
-  git clone --recursive <GIT URL>
+  git clone --recursive GIT_URL
 
   
   Run it as:
