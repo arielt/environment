@@ -21,9 +21,9 @@ My environment preferences:
 
   clone this repository with submodules:
 
-  git clone --recursive GIT_URL
+  git clone --recursive URL
 
-  edit puppet/manifests/ruby.pp to add users and gems
+  carefuly review the list of users in puppet/manifests/ruby.pp
   
   Run it as:
 

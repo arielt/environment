@@ -7,9 +7,10 @@ $ruby       = 'ruby-2.0.0-p195'
 $app        = 'dev'
 $gemset     = "${ruby}@${app}"
 
-# add your user here
+# WARNING: set exact users you want to use rvm
 rvm::system_user { 
   root: ;
+  # nicira: ;
 }
 
 # system user for backward compatibility
