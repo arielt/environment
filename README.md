@@ -40,3 +40,7 @@ My environment preferences:
   sudo apt-get install mysql-server
 
   mysql -u root -p 
+
+  To use ruby mysql gems, add this:
+
+  sudo apt-get install libmysql-ruby libmysqlclient-dev
