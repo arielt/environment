@@ -32,3 +32,11 @@ My environment preferences:
   Packages:
 
   puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp --detailed-exitcodes
+
+* MySQL
+
+  Looks like puppet can't install mysql on precise
+
+  sudo apt-get install mysql-server
+
+  mysql -u root -p 
