@@ -10,7 +10,7 @@ $gemset     = "${ruby}@${app}"
 # WARNING: set exact users you want to use rvm
 rvm::system_user { 
   root: ;
-  # nicira: ;
+  vagrant: ;
 }
 
 # system user for backward compatibility

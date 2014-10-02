@@ -29,6 +29,10 @@ My environment preferences:
 
   puppet apply --modulepath 'puppet/modules' puppet/manifests/ruby.pp --detailed-exitcodes
 
+  Sometimes you need to fix rvm installer manually, by using wget instead of curl:
+
+  wget https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer /tmp/rvm-installer
+
   Packages:
 
   puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp --detailed-exitcodes
