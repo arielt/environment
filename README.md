@@ -48,3 +48,18 @@ My environment preferences:
   To use ruby mysql gems, add this:
 
   sudo apt-get install libmysql-ruby libmysqlclient-dev
+
+* Ruby
+
+  To update rubygems:
+
+  gem install rubygems-update
+
+  update_rubygems
+
+  gem update --system
+
+  To get javascript runtime, install nodejs:
+
+  puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp
+
