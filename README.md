@@ -5,6 +5,12 @@ My environment preferences:
 
 * OSX Terminal
 
+  Solarized Dark
+
+* Fonts
+
+  DejaVu Sans Mono Book
+
 * Vim
 
   Some Vim bundles:
@@ -31,7 +37,7 @@ My environment preferences:
 
   Sometimes you need to fix rvm installer manually, by using wget instead of curl:
 
-  wget https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer /tmp/rvm-installer
+  wget https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer -O /tmp/rvm-installer
 
   Packages:
 
