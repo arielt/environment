@@ -13,11 +13,19 @@ My environment preferences:
 
 * Vim
 
-  Some Vim bundles:
-  
-  * git://github.com/ervandew/supertab.git
+  Install pathogen:
 
-  * git://github.com/majutsushi/tagbar.git
+    https://github.com/tpope/vim-pathogen
+
+  Install bundles:
+
+    cd ~/.vim/bundle
+
+    git clone git://github.com/ervandew/supertab.git
+
+    git clone git://github.com/majutsushi/tagbar.git
+
+    git clone git://github.com/altercation/vim-colors-solarized.git
 
 * SSH
 
