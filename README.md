@@ -15,17 +15,17 @@ My environment preferences:
 
   Install pathogen:
 
-    https://github.com/tpope/vim-pathogen
+    * https://github.com/tpope/vim-pathogen
 
   Install bundles:
 
-    cd ~/.vim/bundle
+    * cd ~/.vim/bundle
 
-    git clone git://github.com/ervandew/supertab.git
+    * git clone git://github.com/ervandew/supertab.git
 
-    git clone git://github.com/majutsushi/tagbar.git
+    * git clone git://github.com/majutsushi/tagbar.git
 
-    git clone git://github.com/altercation/vim-colors-solarized.git
+    * git clone git://github.com/altercation/vim-colors-solarized.git
 
 * SSH
 
