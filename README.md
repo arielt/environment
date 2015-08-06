@@ -51,6 +51,19 @@ My environment preferences:
 
   puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp --detailed-exitcodes
 
+
+  OR
+
+  Use standard way:
+
+
+  puppet module install puppetlabs-stdlib
+  puppet module install camptocamp-openldap
+  puppet module install puppetlabs-apache
+  puppet module install puppetlabs-passenger
+  sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/openldap.pp --detailed-exitcodes
+  sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/phpldapadmin.pp --detailed-exitcodes
+
 * MySQL
 
   Looks like puppet can't install mysql on precise
