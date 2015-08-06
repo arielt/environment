@@ -60,14 +60,16 @@ My environment preferences:
   puppet module install puppetlabs-stdlib
   
   puppet module install camptocamp-openldap
-  
-  puppet module install puppetlabs-apache
-  
-  puppet module install puppetlabs-passenger
+
+  puppet module install spantree-phpldapadmin
+
+  puppet module install maestrodev-rvm
   
   sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/openldap.pp --detailed-exitcodes
   
   sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/phpldapadmin.pp --detailed-exitcodes
+
+  sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/ruby.pp --detailed-exitcodes
 
 * MySQL
 
