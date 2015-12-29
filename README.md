@@ -1,99 +1,118 @@
-environment
+Environment
 ===========
 
-My environment preferences:
+## OSX Terminal
 
-* OSX Terminal
+Theme: Solarized Dark
 
-  Solarized Dark
+Font: DejaVu Sans Mono Book 12
 
-* Fonts
+Colorful output:
 
-  DejaVu Sans Mono Book
+    ~/.bash_profile:
+    export CLICOLOR=1
+    export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
-* Vim
+## Sublime
 
-  Install pathogen:
+Install PackageControl
 
-    * https://github.com/tpope/vim-pathogen
+Install packages:
 
-  Install bundles:
+  * MarkdownPreview
+  * BeautifyRuby
 
-    * cd ~/.vim/bundle
+Configuration files:
 
-    * git clone git://github.com/ervandew/supertab.git
+    Preferences -> Settings - More -> Syntax Specific - User:
+    {
+      "tab_size": 2,
+      "translate_tabs_to_spaces": true
+    }
 
-    * git clone git://github.com/majutsushi/tagbar.git
-
-    * git clone git://github.com/altercation/vim-colors-solarized.git
-
-* SSH
-
-* Git
-
-* Puppet
-
-  clone this repository with submodules:
-
-  git clone --recursive URL
-
-  carefuly review the list of users in puppet/manifests/ruby.pp
-  
-  Install ruby and rvm:
-
-  puppet apply --modulepath 'puppet/modules' puppet/manifests/ruby.pp --detailed-exitcodes
-
-  Sometimes you need to fix rvm installer manually, by using wget instead of curl:
-
-  wget https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer -O /tmp/rvm-installer
-
-  Packages:
-
-  puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp --detailed-exitcodes
+    Preferences -> Key Bindings - User
+    [
+      { "keys": ["command+l"], "command": "show_overlay {\"overlay\": \"goto\", \"text\": \":\"}"}
+    ]
 
 
-  OR
+## Vim
+
+Install pathogen:
+
+  * https://github.com/tpope/vim-pathogen
+
+Install bundles:
+
+    cd ~/.vim/bundle
+    git clone git://github.com/ervandew/supertab.git
+    git clone git://github.com/majutsushi/tagbar.git
+    git clone git://github.com/altercation/vim-colors-solarized.git
+
+## Puppet
+
+Clone this repository with submodules:
+
+    git clone --recursive URL
+
+Carefuly review the list of users in puppet/manifests/ruby.pp
+
+Install ruby and rvm:
+
+    puppet apply --modulepath 'puppet/modules' puppet/manifests/ruby.pp --detailed-exitcodes
+
+Sometimes you need to fix rvm installer manually, by using wget instead of curl:
+
+    wget https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer -O /tmp/rvm-installer
+
+Packages:
+
+    puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp --detailed-exitcodes
+
+
+Or
 
   Use standard way:
 
+    puppet module install puppetlabs-stdlib
+    puppet module install camptocamp-openldap
+    puppet module install spantree-phpldapadmin
+    puppet module install maestrodev-rvm
+    sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/openldap.pp --detailed-exitcodes
+    sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/phpldapadmin.pp --detailed-exitcodes
+    sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/ruby.pp --detailed-exitcodes
 
-  puppet module install puppetlabs-stdlib
-  
-  puppet module install camptocamp-openldap
+## MySQL
 
-  puppet module install spantree-phpldapadmin
+Looks like puppet can't install mysql on precise
 
-  puppet module install maestrodev-rvm
-  
-  sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/openldap.pp --detailed-exitcodes
-  
-  sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/phpldapadmin.pp --detailed-exitcodes
+    sudo apt-get install mysql-server
+    mysql -u root -p 
 
-  sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/ruby.pp --detailed-exitcodes
+To use ruby mysql gems, add this:
 
-* MySQL
+    sudo apt-get install libmysql-ruby libmysqlclient-dev
 
-  Looks like puppet can't install mysql on precise
+## Ruby
 
-  sudo apt-get install mysql-server
+To update rubygems:
 
-  mysql -u root -p 
+    gem install rubygems-update
+    update_rubygems
+    gem update --system
 
-  To use ruby mysql gems, add this:
+To get javascript runtime, install nodejs:
 
-  sudo apt-get install libmysql-ruby libmysqlclient-dev
+    puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp
 
-* Ruby
+## Mac OS Ruby
 
-  To update rubygems:
+  Install homebrew and rbenv, add rbenv to bash, install ruby
 
-  gem install rubygems-update
-
-  update_rubygems
-
-  gem update --system
-
-  To get javascript runtime, install nodejs:
-
-  puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp
-
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew install rbenv ruby-build
+    echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+    source ~/.bash_profile
+    rbenv install 2.2.3
+    rbenv global 2.2.3
+    ruby -v
