@@ -9,3 +9,6 @@ export ARCHFLAGS="-arch x86_64"
 
 alias ls='ls -all'
 
+# go
+export GOPATH=$HOME/go/
+export PATH=$GOPATH/bin:$PATH
