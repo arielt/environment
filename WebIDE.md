@@ -4,9 +4,9 @@
 
 I'm a long time Vi / Vim user, but always feeling opportunistic about new editors and development environments.
 
-In complicated system software projects, the repository I'm actively working on will be part of a bigger multi-repository development environment. Such environment can be provided in the form of virtual machine or container.
+In complicated system software projects, the repository I'm actively working on will be part of a bigger multi-repository development environment. The environment can be provided in the form of virtual machine or container.
 
-There are many ways to use a native editor in such environment, each with its own pros and cons:
+In such environment, there are multiple ways to use a native editor, each with its own pros and cons:
 * Virtual machine's file system can be mounted on native filesystem, but most editors don't cope well with the performance of the mounted volume.
 * Virtual's machine repository can be synced with local one with tools like Rsync, but the correctness of synchronization mechanism can be influenced by git operations.
 
