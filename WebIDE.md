@@ -36,6 +36,9 @@ Cloud9 is arguably the easiest one to start with.
 * If required, unload VM firewall:
 
 
-    systemctl status firewalld
-    systemctl stop firewalld
-    systemctl disable firewalld
+      systemctl status firewalld
+    
+      systemctl stop firewalld
+    
+      systemctl disable firewalld
+
