@@ -87,32 +87,12 @@ Or
 Looks like puppet can't install mysql on precise
 
     sudo apt-get install mysql-server
-    mysql -u root -p 
+    mysql -u root -p
 
 To use ruby mysql gems, add this:
 
     sudo apt-get install libmysql-ruby libmysqlclient-dev
 
-## Ruby
+## Ruby and Ruby on Rails
 
-To update rubygems:
-
-    gem install rubygems-update
-    update_rubygems
-    gem update --system
-
-To get javascript runtime, install nodejs:
-
-    puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp
-
-## Mac OS Ruby
-
-  Install homebrew and rbenv, add rbenv to bash, install ruby
-
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    brew install rbenv ruby-build
-    echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
-    source ~/.bash_profile
-    rbenv install 2.2.3
-    rbenv global 2.2.3
-    ruby -v
+[RoR.md](RoR.md)
