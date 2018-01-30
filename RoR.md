@@ -4,7 +4,10 @@
 
 ### Ruby via rbenv
 
-    brew update && brew upgrade ruby-build
+    brew update
+    brew install ruby-build
+    brew install rbenv
+    rbenv init
 
     # make rbenv be loaded automatically
     echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
