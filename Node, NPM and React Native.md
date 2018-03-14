@@ -29,3 +29,7 @@ Installing web rtc:
 
     npm install react-native-webrtc
     react-native link
+
+Install cocoapods:
+
+    gem install cocoapods
