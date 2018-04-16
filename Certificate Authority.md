@@ -56,4 +56,10 @@ Convert client key / certificate to p12 format:
 openssl pkcs12 -export -clcerts -inkey neo.key -in neo.pem -out neo.p12 -name "Neo"
 ```
 
+### Chrome
+
 Import .p12 file into keychain, mark it 'Always trust'. From now on, browser will use this certificate when relevant CA is in the list of CAs provided by server in handshake.
+
+### Firefox
+
+Via Preferences, import both CA pem certificate and user's p12 file.
