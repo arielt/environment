@@ -46,3 +46,14 @@ Display the server certificate:
 ```
 openssl x509 -in server.pem -text
 ```
+
+## Install client certificate
+
+If you need client certificate by in-browser application, it should be added to browser / OS repo.
+
+Convert client key / certificate to p12 format:
+```
+openssl pkcs12 -export -clcerts -inkey neo.key -in neo.pem -out neo.p12 -name "Neo"
+```
+
+Import .p12 file into keychain, mark it 'Always trust'. From now on, browser will use this certificate when relevant CA is in the list of CAs provided by server in handshake.
