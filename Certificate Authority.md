@@ -1,6 +1,6 @@
 # How to create local certificate authority
 
-Node.js, websockets operations may require to have server and client cetificate, signed by Certificate Authority.
+Node.js, websocket operations may require to have server and client certificate, signed by Certificate Authority.
 
 In this example, we will create CA of our own and issue certificates for server and client.
 
@@ -58,8 +58,9 @@ openssl pkcs12 -export -clcerts -inkey neo.key -in neo.pem -out neo.p12 -name "N
 
 ### Chrome
 
-Import .p12 file into OS keychain, mark it 'Always trust'. From now on, browser will use this certificate when relevant CA is in the list of CAs provided by server in handshake.
+Import .p12 file into OS/browser keychain (Keychain Access on Mac), mark it 'Always trust'.
+From now on, browser will use this certificate when relevant CA is in the list of CAs provided by server in handshake.
 
 ### Firefox
 
-Via Preferences, import both CA pem certificate and user's p12 file.
+Via Preferences, import both CA PEM certificate and user's p12 file.
