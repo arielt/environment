@@ -13,8 +13,10 @@ Check if there is node installed with brew. It has been known to cause problems 
 * Both node and npm should be available
 
 Update npm:
+```
+npm install -g npm@latest
 
-    npm i -g npm
+```
 
 ## React Native
 
