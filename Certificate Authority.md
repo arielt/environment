@@ -7,6 +7,8 @@ In this example, we will create CA of our own and issue certificates for server 
 ECDSA keys claimed to provide better security, privacy and performance -
 especially on mobile.
 
+## Certificate Authority
+
 Create CA private key:
 ```
 openssl ecparam -genkey -name prime256v1 -out ca.key
@@ -21,6 +23,8 @@ Install CA root certificate in Mac OS keychain:
 * Open Keychain Access.
 * Import items - pick up ca.pem.
 * Find the certificate, double click on it and in Trust section select 'Always trust'.
+
+## Public Key Certificate
 
 Generate private key for server certificate:
 ```
