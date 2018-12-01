@@ -1,21 +1,33 @@
 # Node.js
 
+
+## Install NVM
+
+https://github.com/creationix/nvm
+
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+## Install Node.js
+
+```
+nvm install 10.13.0
+nvm use 10.13.0
+```
+
 ## Brew
 
 Check if there is node installed with brew. It has been known to cause problems in the past.
 
     brew uninstall node
 
-## Installation
+## Useful instructions
 
-* Download package from https://nodejs.org
-* Install
-* Both node and npm should be available
 
-Update npm:
 ```
-npm install -g npm@latest
-
+# check globally installed packages
+npm list -g --depth 0
 ```
 
 ## React Native
