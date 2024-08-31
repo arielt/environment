@@ -96,3 +96,8 @@ To use ruby mysql gems, add this:
 ## Ruby and Ruby on Rails
 
 [RoR.md](RoR.md)
+
+## Git
+    # set user in current repo
+    git config user.name "John Doe"
+    git config user.email john.doe@gmail.com
