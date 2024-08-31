@@ -1,40 +1,11 @@
 Environment
 ===========
 
-## OSX Terminal
+## macOS Terminal
+Color Theme: Basic
 
-Theme: Solarized Dark
-
-Font: DejaVu Sans Mono Book 12
-
-Colorful output:
-
-    ~/.bash_profile:
-    export CLICOLOR=1
-    export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-
-## Sublime
-
-Install PackageControl
-
-Install packages:
-
-  * MarkdownPreview
-  * BeautifyRuby
-
-Configuration files:
-
-    Preferences -> Settings - More -> Syntax Specific - User:
-    {
-      "tab_size": 2,
-      "translate_tabs_to_spaces": true
-    }
-
-    Preferences -> Key Bindings - User
-    [
-      { "keys": ["command+l"], "command": "show_overlay {\"overlay\": \"goto\", \"text\": \":\"}"}
-    ]
-
+## Visual Studio Code
+Color Theme: Quiet Light
 
 ## Vim
 
@@ -103,6 +74,6 @@ To use ruby mysql gems, add this:
     git config user.name "John Doe"
     git config user.email john.doe@gmail.com
 
-    # check settings
+    # check configuration
     git config --list
 ```

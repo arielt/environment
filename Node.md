@@ -1,6 +1,6 @@
 # Node.js
 
-## MacOS
+## macOS
 
 Check if there is node installed with brew. It has been known to cause problems in the past.
 
