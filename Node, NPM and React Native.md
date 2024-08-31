@@ -1,49 +1,22 @@
 # Node.js
 
-
-## Install NVM
-
-https://github.com/creationix/nvm
-
-```
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-```
-
-## Install Node.js
-
-```
-nvm install 10.13.0
-nvm use 10.13.0
-```
-
-## Brew
+## MacOS
 
 Check if there is node installed with brew. It has been known to cause problems in the past.
 
-    brew uninstall node
-
-## Useful instructions
-
-
 ```
-# check globally installed packages
+brew list
+brew uninstall node
+```
+
+Follow https://nodejs.org/en/download/package-manager
+
+Install n for management of multiple versions
+
+Upgrade
+```
 npm list -g --depth 0
+npm update npm -g
+n stable
+npm update -g
 ```
-
-## React Native
-
-    npm install -g react-native-cli
-    react-native init tmp
-    cd tmp
-    react-native run-ios
-
-Troubleshooting around react native and linking native code: https://github.com/oney/RCTWebRTCDemo/issues/26
-
-Installing web rtc:
-
-    npm install react-native-webrtc
-    react-native link
-
-Install cocoapods:
-
-    gem install cocoapods
