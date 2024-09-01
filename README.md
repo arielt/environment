@@ -1,5 +1,4 @@
-Environment
-===========
+# Environment
 
 ## macOS Terminal
 Color Theme: Basic
@@ -7,18 +6,19 @@ Color Theme: Basic
 ## Visual Studio Code
 Color Theme: Quiet Light
 
-## Vim
+## Git
+```shell
+    # set the user in the current repo
+    git config user.name "John Doe"
+    git config user.email john.doe@gmail.com
 
-Install pathogen:
+    # check configuration
+    git config --list
+```
 
-  * https://github.com/tpope/vim-pathogen
+## [Node](Node.md)
 
-Install bundles:
-
-    cd ~/.vim/bundle
-    git clone git://github.com/ervandew/supertab.git
-    git clone git://github.com/majutsushi/tagbar.git
-    git clone git://github.com/altercation/vim-colors-solarized.git
+## [Ruby on Rails](RoR.md)
 
 ## Puppet
 
@@ -40,7 +40,6 @@ Packages:
 
     puppet apply --modulepath 'puppet/modules' puppet/manifests/packages.pp --detailed-exitcodes
 
-
 Or
 
   Use standard way:
@@ -52,28 +51,3 @@ Or
     sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/openldap.pp --detailed-exitcodes
     sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/phpldapadmin.pp --detailed-exitcodes
     sudo puppet apply --modulepath '/home/ubuntu/.puppet/modules' puppet/manifests/ruby.pp --detailed-exitcodes
-
-## MySQL
-
-Looks like puppet can't install mysql on precise
-
-    sudo apt-get install mysql-server
-    mysql -u root -p
-
-To use ruby mysql gems, add this:
-
-    sudo apt-get install libmysql-ruby libmysqlclient-dev
-
-## Ruby and Ruby on Rails
-
-[RoR.md](RoR.md)
-
-## Git
-```shell
-    # set the user in the current repo
-    git config user.name "John Doe"
-    git config user.email john.doe@gmail.com
-
-    # check configuration
-    git config --list
-```
