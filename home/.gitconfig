@@ -1,9 +1,0 @@
-[user]
-  name = Ariel Tubaltsev
-  email = tubaltzev@gmail.com
-
-[diff]
-  external = /usr/local/bin/araxisgitdiff
-  renames = true
-[pager]
-  diff =
