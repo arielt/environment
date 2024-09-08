@@ -8,12 +8,12 @@ Color Theme: Quiet Light
 
 ## Git
 ```shell
-    # set the user in the current repo
-    git config user.name "John Doe"
-    git config user.email john.doe@gmail.com
+# set the user in the current repo
+git config user.name "John Doe"
+git config user.email john.doe@gmail.com
 
-    # check configuration
-    git config --list
+# check configuration
+git config --list
 ```
 
 ## [Node](Node.md)
