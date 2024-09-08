@@ -39,3 +39,7 @@ prompt='$(git_username)/$(git_branch_name) %1~ %# '
 PROMPT=$(echo $PROMPT | sed 's/(base) //')
 
 # <<< setup prompt <<<
+
+# >>> rbenv >>>
+eval "$(rbenv init - zsh)"
+# <<< rbenv <<<

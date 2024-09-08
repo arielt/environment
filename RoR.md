@@ -11,9 +11,9 @@ rbenv install 3.3.5
 rbenv versions
 
 # add to ~/.zshrc
-# >>> ruby env >>>
+# >>> rbenv >>>
 eval "$(rbenv init - zsh)"
-# <<< ruby env <<<
+# <<< rbenv <<<
 
 # Rails
 # check ruby is the latest stable
