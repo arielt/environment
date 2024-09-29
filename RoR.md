@@ -28,27 +28,40 @@ rails -v
 
 ### Ruby via rbenv
 
-    brew update
-    brew install ruby-build
-    brew install rbenv
-    rbenv init
+```shell
+brew update
+brew install ruby-build
+brew install rbenv
+rbenv init
 
-    # make rbenv be loaded automatically
-    echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+# make rbenv be loaded automatically
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
 
-    rbenv install 2.4.2
-    rbenv global 2.4.2
-    ruby -v
+rbenv install 2.4.2
+rbenv global 2.4.2
+ruby -v
+```
 
 ### Rails
 
-    gem install rails 5.1.4
-    rbenv rehash # make rails available in rbenv
-    rails -v
+```shell
+gem install rails 5.1.4
+rbenv rehash # make rails available in rbenv
+rails -v
+```
+
+### Postgres client
+
+```shell
+brew install libpq
+gem install pg -- --with-pg-config=/usr/local/homebrew/opt/libpq/bin/pg_config
+```
 
 ### Create app with PostgreSQL
 
-    rails new app --database=postgresql
+```shell
+rails new app --database=postgresql
+```
 
 ## References
 

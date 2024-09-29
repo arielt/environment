@@ -43,3 +43,7 @@ PROMPT=$(echo $PROMPT | sed 's/(base) //')
 # >>> rbenv >>>
 eval "$(rbenv init - zsh)"
 # <<< rbenv <<<
+
+# >>> PostgreSQL client >>>
+export PATH="/usr/local/homebrew/opt/libpq/bin:$PATH"
+# <<< PostgreSQL client <<<
