@@ -1,0 +1,3 @@
+printf "Dump database $DB_DB into file $1\n"
+PGPASSWORD=$POSTGRESQL_PASSWORD pg_dump -h $INTERNAL_IP -p $DB_PORT -U $DB_USER -d $DB_DB > $1
+ls -all $1
