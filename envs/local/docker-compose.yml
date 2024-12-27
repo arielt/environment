@@ -1,0 +1,14 @@
+services:
+  local_db:
+    image: bitnami/postgresql:latest
+    ports:
+      - ${DB_PORT}:5432
+    volumes:
+      - ./volumes/db:/bitnami/postgresql
+    logging:
+      driver: "json-file"
+      options:
+        max-file: 5
+        max-size: 10m
+    env_file:
+      - .env
