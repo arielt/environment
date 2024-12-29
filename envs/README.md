@@ -2,7 +2,7 @@
 
 Set environment:
 ```shell
-source bin/env_set local/.env
+source set_env local/.env
 ```
 
 Rebuild containers:
@@ -25,5 +25,5 @@ docker image prune
 
 Connect to the database:
 ```shell
-bin/db_conn
+./conn_db
 ```
