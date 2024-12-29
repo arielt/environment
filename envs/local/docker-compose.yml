@@ -2,13 +2,23 @@ services:
   local_db:
     image: bitnami/postgresql:latest
     ports:
-      - ${DB_PORT}:5432
+      - ${DB_PORT}:${DB_PORT}
     volumes:
       - ./volumes/db:/bitnami/postgresql
     logging:
       driver: "json-file"
       options:
-        max-file: 5
-        max-size: 10m
+        max-file: 1
+        max-size: 1m
     env_file:
       - .env
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - ${SMTP_PORT}:${SMTP_PORT} # smtp server
+      - ${MAIL_UI_PORT}:${MAIL_UI_PORT} # web ui
+    logging:
+      driver: "json-file"
+      options:
+        max-file: 1
+        max-size: 1m
