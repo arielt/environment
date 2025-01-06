@@ -1,13 +1,16 @@
-# Ruby and Ruby on Rails environment
+# Ruby on Rails environment
 
 ## Installation on Mac OS: Zsh
 ```shell
+# brew
 brew upgrade
 brew update
 brew install rbenv
 
-# latest stable version from here: https://www.ruby-lang.org/en/downloads/
-rbenv install 3.3.5
+# ruby - take stable version from here: https://www.ruby-lang.org/en/downloads/
+brew upgrade ruby-build
+ruby-build --list
+rbenv install 3.4.1
 rbenv versions
 
 # add to ~/.zshrc
@@ -15,20 +18,18 @@ rbenv versions
 eval "$(rbenv init - zsh)"
 # <<< rbenv <<<
 
-# Rails
-# check ruby is the latest stable
-rbenv local 3.3.5
+# rails
+rbenv local 3.4.1 # or create .ruby-version file with a content 3.4.1
 ruby -v
-gem install rails
+gem install rails 8.0.1
 rbenv rehash
 rails -v
 ```
 
 ## Installation on Mac OS: Bash
 
-### Ruby via rbenv
-
 ```shell
+# brew
 brew update
 brew install ruby-build
 brew install rbenv
@@ -37,15 +38,13 @@ rbenv init
 # make rbenv be loaded automatically
 echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
 
-rbenv install 2.4.2
-rbenv global 2.4.2
+# ruby
+rbenv install 3.4.1
+rbenv global 3.4.1
 ruby -v
-```
 
-### Rails
-
-```shell
-gem install rails 5.1.4
+# rails
+gem install rails 8.0.1
 rbenv rehash # make rails available in rbenv
 rails -v
 ```
