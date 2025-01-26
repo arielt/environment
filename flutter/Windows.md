@@ -1,10 +1,16 @@
-# Windows
+# Flutter dev environment on Windows
 
 ## Fresh installation
 
 * Install Git for Windows: https://gitforwindows.org
-* Install Visual Studio toolchain: https://visualstudio.microsoft.com/downloads/ <br> Community free download <br> Desktop development with C++
-* Install Visual Studio Code: https://code.visualstudio.com/download. <br> Personal theme preference: Quiet Light 😊
+* Install Visual Studio toolchain: https://visualstudio.microsoft.com/downloads/
+   *  Community free download → Desktop development with C++
+* Install Visual Studio Code: https://code.visualstudio.com/download
+  * Personal theme preference: Quiet Light 😊
 * Install VS Code Flutter extension: CTRL + SHIFT + x: flutter
-* Install Flutter SDK: VS Code: CTRL + SHIFT + p: flutter
-* Enable developer mode: `start ms-settings:developers`
+* Install Flutter SDK: VS Code: CTRL + SHIFT + p:
+  * flutter → New Project → Download SDK
+* Turn on developer mode:
+```shell
+start ms-settings:developers
+```
