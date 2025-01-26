@@ -10,6 +10,10 @@
 * Install VS Code Flutter extension: CTRL + SHIFT + x: flutter
 * Install Flutter SDK: VS Code: CTRL + SHIFT + p:
   * flutter → New Project → Download SDK
+* If VS Code didn't offer to add Flutter SDK to the path:
+  * WIN + R
+  * `SystemPropertiesAdvanced`
+  * Environment Variables → Path → Edit → New
 * Turn on developer mode:
 ```shell
 start ms-settings:developers
