@@ -19,7 +19,7 @@ export PATH="$PATH:/home/.../flutter/bin"
 sudo snap install snapcraft --classic
 sudo snap install lxd
 sudo lxd init
-sudo usermod -a -G lxd vboxuser # requires logout / login
+sudo usermod -a -G lxd $(whoami) # requires logout / login
 ```
 
 
