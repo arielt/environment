@@ -22,9 +22,8 @@ sudo lxd init
 sudo usermod -a -G lxd $(whoami) # requires logout / login
 ```
 
-
 ## Build Snap app
-```
+```shell
 rm -rf build
 flutter clean
 snapcraft --use-lxd
