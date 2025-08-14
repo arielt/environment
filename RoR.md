@@ -24,29 +24,6 @@ rbenv rehash
 rails -v
 ```
 
-## Installation on Mac OS: Bash
-
-```shell
-# brew
-brew update
-brew install ruby-build
-brew install rbenv
-rbenv init
-
-# make rbenv be loaded automatically
-echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
-
-# ruby
-rbenv install 3.4.1
-rbenv global 3.4.1
-ruby -v
-
-# rails
-gem install rails 8.0.1
-rbenv rehash # make rails available in rbenv
-rails -v
-```
-
 ### Postgres client
 
 ```shell
