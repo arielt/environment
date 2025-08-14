@@ -10,16 +10,14 @@ brew install rbenv
 # ruby - take stable version from here: https://www.ruby-lang.org/en/downloads/
 brew upgrade ruby-build
 ruby-build --list
-rbenv install 3.4.1
+rbenv install 3.4.5
 rbenv versions
 
 # add to ~/.zshrc
-# >>> rbenv >>>
-eval "$(rbenv init - zsh)"
-# <<< rbenv <<<
+eval "$(rbenv init -)"
 
 # rails
-rbenv local 3.4.1 # or create .ruby-version file with a content 3.4.1
+rbenv local 3.4.5 # or create .ruby-version file with a content 3.4.1
 ruby -v
 gem install rails 8.0.1
 rbenv rehash
