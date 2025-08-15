@@ -36,8 +36,3 @@ gem install pg -- --with-pg-config=/usr/local/homebrew/opt/libpq/bin/pg_config
 ```shell
 rails new app --database=postgresql
 ```
-
-## References
-
-- [Go Rails using asdf](https://gorails.com/setup/macos/14-sonoma)
-- [Using rbenv](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-macos)
